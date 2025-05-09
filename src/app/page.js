@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 "use client";
 import { useRef, useLayoutEffect, useEffect } from "react";
 import { usePathname } from "next/navigation";
@@ -43,7 +42,6 @@ function Home({ pathname }) {
   useLayoutEffect(() => {
     if (!lenis || !containerRef.current || typeof window === "undefined") return;
 
-    // Set up Lenis scroll integration with GSAP for non-pinned sections
     ScrollTrigger.scrollerProxy(containerRef.current, {
       scrollTop(v) {
         return arguments.length
@@ -59,7 +57,6 @@ function Home({ pathname }) {
       pinType: containerRef.current.style.transform ? "transform" : "fixed",
     });
 
-    // Connect Lenis scroll to ScrollTrigger.update
     const handleLenisScroll = () => {
       ScrollTrigger.update();
     };
@@ -68,13 +65,11 @@ function Home({ pathname }) {
     ScrollTrigger.addEventListener("refreshInit", () => lenis.stop());
     ScrollTrigger.addEventListener("refresh", () => lenis.start());
 
-    // Force refresh after mounting
     setTimeout(() => {
       ScrollTrigger.refresh(true);
     }, 200);
 
     return () => {
-      // Cleanup
       ScrollTrigger.getAll().forEach((t) => t.kill());
       ScrollTrigger.scrollerProxy(containerRef.current, null);
       lenis.off("scroll", handleLenisScroll);
@@ -89,12 +84,6 @@ function Home({ pathname }) {
       <Carousel key={`carousel-${pathname}`} />
       <FinalHero />
       <Footer />
-=======
-export default function Home() {
-  return (
-    <div className="app">
-      <h1>Your AI art portal</h1>
->>>>>>> 20637ed (cleanup)
     </div>
   );
 }
