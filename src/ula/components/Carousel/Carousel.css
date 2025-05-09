@@ -1,0 +1,124 @@
+.carousel-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #000;
+    z-index: 1;
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.carousel-panel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    will-change: transform, opacity;
+    padding-inline: clamp(1rem, 6vw, 10rem);
+}
+
+.carousel-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.carousel-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    will-change: transform, opacity;
+}
+
+.carousel-text {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+    color: #fff;
+    padding: 2rem 0;
+    will-change: transform, opacity;
+}
+
+.carousel-expertise {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    margin-bottom: 0.75rem;
+    color: #fff;
+}
+
+.carousel-index {
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    color: #fff;
+    opacity: 0.5;
+}
+
+.carousel-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+    line-height: 1.2;
+    color: #fff;
+}
+
+.carousel-sub {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 1.25rem;
+    color: #fff;
+    opacity: 0.85;
+}
+
+.carousel-desc {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: #fff;
+    opacity: 0.75;
+}
+
+.carousel-empty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Animation hook */
+.animate-in {
+    opacity: 0;
+    transform: translateY(40px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .carousel-panel {
+        padding-inline: 1.5rem;
+    }
+
+    .carousel-title {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .carousel-sub {
+        font-size: 1rem;
+    }
+}

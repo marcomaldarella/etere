@@ -1,0 +1,209 @@
+.services {
+  background-color: #fff;
+  padding: 6em 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.servicesTitle {
+  font-size: 5rem;
+  letter-spacing: -0.4rem;
+  font-weight: 600;
+  color: #000;
+  line-height: 0.8em;
+}
+
+.services-entry {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 48px;
+}
+
+.servicesDescription {
+  font-size: 1.25rem;
+  color: #000;
+  line-height: 1em;
+  letter-spacing: -0.05rem;
+  max-width: 600px;
+}
+
+.servicesList {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.serviceItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-top: 1px solid #ccc;
+  padding: 2rem 0;
+}
+
+.serviceItem:last-child {
+  border-bottom: 1px solid #ccc;
+}
+
+.serviceLeft {
+  flex: 1.4;
+  font-size: 3.8rem;
+  font-weight: 600;
+  line-height: 1em;
+  color: #000;
+  letter-spacing: -0.18rem;
+  max-width: 600px;
+}
+
+.serviceCenter {
+  flex: 0 0 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0%;
+}
+
+.serviceRight {
+  flex: 2;
+  font-size: 1.2rem;
+  color: #000;
+  line-height: 1.5;
+  display: flex;
+  letter-spacing: -1.1px;
+  flex-direction: column;
+  gap: 1rem;
+  line-height: 1.4em;
+  max-width: 500px;
+  opacity: 80%;
+  padding-right: 20px;
+}
+
+.serviceIndex {
+  align-self: flex-end;
+  color: #000;
+  opacity: 50%;
+}
+
+@media (max-width: 768px) {
+  .services-entry {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .servicesTitle {
+    font-size: 3rem;
+    line-height: 1em;
+    letter-spacing: -0.2rem;
+  }
+
+  .servicesDescription {
+    font-size: 1rem;
+  }
+
+  .serviceItem {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 2rem 0;
+  }
+
+  .serviceLeft {
+    font-size: 2.5rem;
+    line-height: 1.1em;
+    max-width: none;
+  }
+
+  .serviceCenter {
+    align-self: flex-start;
+  }
+
+  .serviceRight {
+    padding-right: 0;
+    font-size: 1rem;
+    max-width: none;
+  }
+
+  .serviceIndex {
+    align-self: flex-start;
+  }
+}
+
+/* Active state */
+.services.active {
+  position: relative;
+  z-index: 5;
+}
+
+/* Animation initial states */
+.servicesTitle,
+.servicesDescription,
+.serviceItem {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Scroll indicator - reuse the same styles from Hero */
+.services .scroll-indicator {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #000;
+  z-index: 100;
+  animation: fadeInOut 2s ease-in-out infinite;
+}
+
+.services .scroll-indicator span {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  opacity: 0.7;
+}
+
+.services .scroll-arrow {
+  width: 20px;
+  height: 20px;
+  border-right: 2px solid #000;
+  border-bottom: 2px solid #000;
+  transform: rotate(45deg);
+  animation: bounce 2s infinite;
+}
+
+/* If the keyframes aren't defined elsewhere */
+@keyframes fadeInOut {
+
+  0%,
+  100% {
+    opacity: 0.5;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: rotate(45deg) translateY(0);
+  }
+
+  40% {
+    transform: rotate(45deg) translateY(10px);
+  }
+
+  60% {
+    transform: rotate(45deg) translateY(5px);
+  }
+}

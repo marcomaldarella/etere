@@ -1,0 +1,126 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  padding: 2em 2em;
+  z-index: 100000000;
+  mix-blend-mode: difference;
+  display: flex;
+  gap: 2em;
+  overflow: hidden;
+  /* serve a contenere lo pseudo */
+}
+
+/* il vetro smerigliato con gradiente bianco→trasparente */
+.navbar::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* copre tutta la navbar */
+  background: linear-gradient(to bottom,
+      rgba(33, 32, 32, 0.8) 0%,
+      rgba(255, 255, 255, 0) 50%
+      /* scende solo fino al 10% */
+    );
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(52px);
+  /* Safari */
+  pointer-events: none;
+  z-index: -1;
+  /* sotto il contenuto */
+}
+
+/* Assicuriamoci che logo e link stiano sopra l’effetto blur */
+.navbar>.navbar-col,
+.navbar>.navbar-col * {
+  position: relative;
+  z-index: 1;
+}
+
+.navbar-col {
+  flex: 1;
+  display: flex;
+  gap: 2emc;
+}
+
+.navbar-col:nth-child(2) {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  /* se vuoi centrare anche verticalmente */
+}
+
+.navbar-sub-col {
+  display: flex;
+  gap: 10px;
+}
+
+.logo h3 {
+  font-family: "Geist";
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: var(--foreground);
+}
+
+.time p,
+.nav-items p {
+  position: relative;
+  top: 0.075rem;
+  font-family: "Geist";
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: -0.04rem;
+  color: var(--foreground);
+  -webkit-text-stroke: 0.25px var(--foreground);
+}
+
+.nav-items p {
+  text-transform: none;
+}
+
+
+
+
+
+@media (max-width: 900px) {
+  .navbar {
+    padding: 2em;
+  }
+
+  .time,
+  .music-toggle-wrapper {
+    display: none;
+  }
+
+  .nav-items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+
+.navbar-sub-col.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.logo-img {
+  width: 120px;
+  height: auto;
+}
+
+.navbar-sub-col .nav-items {
+  background-color: #fff;
+}

@@ -1,0 +1,291 @@
+{
+    "home": {
+        "hero": {
+            "title": "we shape the unseen",
+            "subtitle": "Our work exists behind the digital foundations of some of the world’s most respected brands, where complexity transforms into seamless solutions. Trust is built through precision, adaptability, and results that speak louder than names.",
+            "cta": "Let’s talk",
+            "marquee": "FLUTTER & NATIVE APP DEVELOPMENT"
+        },
+        "carousel": [
+            {
+                "id": "fintech",
+                "title": "Fintech",
+                "index": "01 / 03",
+                "subtitle": "Shaping seamless digital transactions",
+                "description": "Crafting secure, user-centric financial solutions.",
+                "bg": "/images/carousel/carousel1.jpeg",
+                "url": "#"
+            },
+            {
+                "id": "healthcare",
+                "title": "Healthcare",
+                "index": "02 / 03",
+                "subtitle": "Empowering modern patient care",
+                "description": "Building intuitive, data-driven health platforms.",
+                "bg": "/images/carousel/carousel2.jpeg",
+                "url": "#"
+            },
+            {
+                "id": "logistics",
+                "title": "Logistics",
+                "index": "03 / 03",
+                "subtitle": "Optimizing end-to-end operations",
+                "description": "Streamlining supply chains with intelligent tools.",
+                "bg": "/images/carousel/carousel3.jpeg",
+                "url": "#"
+            }
+        ],
+        "finalHero": {
+            "title": "Let’s make it real.",
+            "text": "Ready to turn vision into reality? Let’s build something that lasts.",
+            "cta": "Start a conversation"
+        }
+    },
+    "services": {
+        "header": "Services",
+        "description": "We build the unseen frameworks that power seamless digital experiences, crafted with precision and a human touch.",
+        "items": [
+            {
+                "title": "Flutter Engineering",
+                "description": "Invisible precision that drives high-performance applications. We develop scalable, robust solutions tailored to complex digital ecosystems."
+            },
+            {
+                "title": "iOS & Android Native Development",
+                "description": "We build solutions that leverage platform-specific capabilities, ensuring optimal speed, stability, and user experience while maintaining a cohesive brand presence across devices."
+            },
+            {
+                "title": "UX/UI Design",
+                "description": "Our design process focuses on intuitive navigation, impactful visuals, and user flows that reduce friction while amplifying brand recognition."
+            },
+            {
+                "title": "Electronics, Firmware & IoT",
+                "description": "We design and develop electronics, firmware, and IoT systems that integrate seamlessly with digital platforms, enabling intelligent products that communicate reliably, perform efficiently, and elevate user interaction with physical technology."
+            }
+        ]
+    },
+    "projects": [
+        {
+            "id": "dealer-management-portal",
+            "title": "Dealer Management Portal",
+            "subtitle": "A custom supply chain management platform for automotive dealers.",
+            "cover": "/images/home/case-study-1.jpeg",
+            "tag": "Flutter App",
+            "categories": [
+                "Automotive",
+                "Logistics",
+                "App Development"
+            ],
+            "client": "Leading firm in automotive sector",
+            "sector": "Automotive",
+            "tech": "Flutter (iOS, Android)",
+            "pain": "A leading firm in automotive sector had to build a unified digital interface for its dealer network limiting real-time communication, order tracking, shipment coordination, and post-sales management. Absence of an integrated system led to fragmented processes and reduced efficiency.",
+            "solution": "Etere Studio contributed to deliver a custom-built supply chain management platform to unify client's dealer operations with real-time visibility and control.\nIntegrated communication layer for real-time inventory tracking across dealer network\nOptimized order management workflows for end-to-end supply chain orchestration\nEnterprise-grade performance, with secure data handling aligned to client's compliance and scalability standards",
+            "highlights": [
+                "Integrated communication layer for real-time inventory tracking across dealer network",
+                "Optimized order management workflows for end-to-end supply chain orchestration",
+                "Enterprise-grade performance, with secure data handling aligned to client's compliance and scalability standards"
+            ],
+            "images": []
+        },
+        {
+            "id": "vehicle-rental-portal",
+            "title": "Vehicle Rental Portal",
+            "subtitle": "Distributed platform for vehicle rentals and telematics.",
+            "cover": "/images/home/case-study-2.jpeg",
+            "tag": "Flutter App",
+            "categories": [
+                "Logistics",
+                "Fleet Management",
+                "IoT"
+            ],
+            "client": "Iveco",
+            "sector": "Logistic",
+            "tech": "Flutter (iOS, Android)",
+            "pain": "Iveco had to build integrated system to manage truck rentals, facing issues with fragmented lease reservations, limited visibility into vehicle status, and scattered communication. Off-the-shelf solutions failed to meet these combined needs efficiently.",
+            "solution": "Etere Studio built a distributed, service-oriented platform to unify reservations, vehicle telemetry, and communication into a cohesive, scalable system.\nMicroservices structured for core domains: reservations, telematics, comms\nEvent-driven architecture enabling asynchronous, decoupled processing\nIoT gateways feeding real-time vehicle data into a centralized telemetry pipeline\nAPI-first design ensuring extensibility and seamless third-party integration",
+            "highlights": [
+                "Microservices structured for core domains: reservations, telematics, comms",
+                "Event-driven architecture enabling asynchronous, decoupled processing",
+                "IoT gateways feeding real-time vehicle data into a centralized telemetry pipeline",
+                "API-first design ensuring extensibility and seamless third-party integration"
+            ],
+            "images": []
+        },
+        {
+            "id": "vehicle-management-app",
+            "title": "Vehicle management app",
+            "subtitle": "Bluetooth-enabled vehicle insights and insurance workflows.",
+            "cover": "/images/home/case-study-3.jpeg",
+            "tag": "Flutter App",
+            "categories": [
+                "Automotive",
+                "Insurance",
+                "IoT"
+            ],
+            "client": "Vodafone Automotive",
+            "sector": "Automotive",
+            "tech": "Flutter (iOS, Android)",
+            "pain": "Vodafone Automotive needed a mobile app with Bluetooth read/write capabilities to interface with in-vehicle systems, enabling claims assessment and real-time visibility into insured vehicle status—requiring robust connectivity, secure data handling, and seamless hardware integration.",
+            "solution": "Etere Studio delivered a utility mobile tool for Vodafone Automotive to streamline black box interaction and insurance workflows.\nFast Bluetooth-based scanning and identification of in-vehicle devices\nGuided configuration flow for black box setup and calibration\nIntuitive interface optimized for insurance field agents\nAutomated data synchronization with insurance systems for real-time claims processing",
+            "highlights": [
+                "Fast Bluetooth-based scanning and identification of in-vehicle devices",
+                "Guided configuration flow for black box setup and calibration",
+                "Intuitive interface optimized for insurance field agents",
+                "Automated data synchronization with insurance systems for real-time claims processing"
+            ],
+            "images": []
+        },
+        {
+            "id": "iot-healthcare-app",
+            "title": "IoT Healthcare App",
+            "subtitle": "Real-time biosignal tracking for medical research.",
+            "cover": "/images/home/case-study-1.jpeg",
+            "tag": "Flutter App",
+            "categories": [
+                "Healthcare",
+                "IoT",
+                "Wearables"
+            ],
+            "client": "Harvard Lab",
+            "sector": "Healthcare",
+            "tech": "Flutter (iOS, Android)",
+            "pain": "A Harvard-incubated start-up needed an app to manage advanced biosignal devices, handling varied setups and preventing errors during real-time brain and body signal acquisition for sleep analysis.",
+            "solution": "Etere Studio developed a device-integrated application to enable real-time biosignal monitoring with intelligent setup management and minimal error rates.\nReal-time visualization and logging of neurological and physiological data via an intuitive interface\nAdaptive signal optimization across heterogeneous medical hardware configurations\nDual-mode UI tailored for seamless use by clinicians and non-technical users alike",
+            "highlights": [
+                "Real-time visualization and logging of neurological and physiological data via an intuitive interface",
+                "Adaptive signal optimization across heterogeneous medical hardware configurations",
+                "Dual-mode UI tailored for seamless use by clinicians and non-technical users alike"
+            ],
+            "images": []
+        },
+        {
+            "id": "digital-banking-app-intesa",
+            "title": "Digital Banking App",
+            "subtitle": "Secure mobile banking and insurance access.",
+            "cover": "/images/home/case-study-2.jpeg",
+            "tag": "Native App",
+            "categories": [
+                "Fintech",
+                "Security",
+                "Banking"
+            ],
+            "client": "Intesa San Paolo",
+            "sector": "Financial Services",
+            "tech": "Native iOS & Android",
+            "pain": "Banca Intesa San Paolo needed a secure, high-performance mobile platform for insurance and account management. Existing offered suboptimal user experience, and fell short on enterprise-grade security and compliance requirements.",
+            "solution": "Etere Studio co-developed a secure, high-performance mobile app for Banca Intesa San Paolo, focused on enhancing digital banking and insurance operations. Our key project focus have been:\nAccess to insurance services and account management within a single UI\nNative system integration for real-time banking data and transactional workflows\nUX optimized for security, accessibility, and regulatory compliance\nEnd-to-end encryption and secure session handling to safeguard user data",
+            "highlights": [
+                "Access to insurance services and account management within a single UI",
+                "Native system integration for real-time banking data and transactional workflows",
+                "UX optimized for security, accessibility, and regulatory compliance",
+                "End-to-end encryption and secure session handling to safeguard user data"
+            ],
+            "images": []
+        },
+        {
+            "id": "investment-management-app",
+            "title": "Investment Management App",
+            "subtitle": "Interactive dashboards for portfolio tracking.",
+            "cover": "/images/home/case-study-3.jpeg",
+            "tag": "Flutter App",
+            "categories": [
+                "Fintech",
+                "Data Visualization"
+            ],
+            "client": "Bestinver",
+            "sector": "Financial Services",
+            "tech": "Flutter (iOS, Android)",
+            "pain": "Bestinver required a modern, high-performance investment platform with an intuitive mobile experience for its clients. Existing tools lacked responsive UI, seamless portfolio visualization, and the flexibility to handle complex financial interactions across devices—impacting engagement and operational efficiency.",
+            "solution": "Etere Studio contributed to Bestinver's platform by delivering a robust, Flutter-based frontend for responsive, high-quality investment interactions.\nConsistent cross-platform experience with native-like performance using Flutter\nInteractive dashboards for real-time portfolio tracking and fund operations\nUX optimized for financial data visualization, ensuring clarity and usability\nSecure API integration for transactions, market data, and account management",
+            "highlights": [
+                "Consistent cross-platform experience with native-like performance using Flutter",
+                "Interactive dashboards for real-time portfolio tracking and fund operations",
+                "UX optimized for financial data visualization, ensuring clarity and usability",
+                "Secure API integration for transactions, market data, and account management"
+            ],
+            "images": []
+        },
+        {
+            "id": "graphic-design-app",
+            "title": "Graphic Design App",
+            "subtitle": "Digital sketching tool for fashion houses with Apple Pencil integration.",
+            "cover": "/images/home/case-study-1.jpeg",
+            "tag": "iPad App",
+            "categories": [
+                "Fashion",
+                "Creative Tools",
+                "Native App"
+            ],
+            "client": "Gucci",
+            "sector": "Luxury Goods",
+            "tech": "Swift (iPadOS)",
+            "pain": "Gucci needed a custom solution to integrate Apple Pencil and iPad into its design workflow. The lack of a unified platform hindered seamless sketching, real-time collaboration, and efficient sharing of design iterations across teams, slowing down the product development cycle.",
+            "solution": "Etere Studio developed a specialized digital design platform for Gucci, integrating iPad and Apple Pencil into the fashion creation workflow.\nHigh-precision Apple Pencil support for sketching and intricate detailing\nDesigner-centric UI for an intuitive, professional creative experience\nCustomizable brushes, textures, and layering tools for realistic digital rendering\nCloud-based synchronization to enable real-time sharing and cross-team collaboration",
+            "highlights": [
+                "High-precision Apple Pencil support for sketching and intricate detailing",
+                "Designer-centric UI for an intuitive, professional creative experience",
+                "Customizable brushes, textures, and layering tools for realistic digital rendering",
+                "Cloud-based synchronization to enable real-time sharing and cross-team collaboration"
+            ],
+            "images": []
+        },
+        {
+            "id": "sportsbook-and-casino-app",
+            "title": "Sportsbook and Casino App",
+            "subtitle": "Scalable white-label betting platform.",
+            "cover": "/images/home/case-study-2.jpeg",
+            "tag": "Flutter App",
+            "categories": [
+                "Betting",
+                "Entertainment"
+            ],
+            "client": "SportServe",
+            "sector": "Betting",
+            "tech": "Flutter",
+            "pain": "Betting operators across Asia, Africa, and the EU required a scalable, white-label platform to deploy branded services rapidly. Existing solutions lacked modularity, seamless third-party integration, and the flexibility needed for fast, region-specific rollouts.",
+            "solution": "Etere Studio engineered a large-scale, white-label sports betting platform built for global deployment and high concurrency.\nScalable architecture supporting millions of concurrent users with high availability\nFully customizable white-label framework for rapid brand onboarding\nEnd-to-end Flutter development enabling a unified, high-performance cross-platform user experience",
+            "highlights": [
+                "Scalable architecture supporting millions of concurrent users with high availability",
+                "Fully customizable white-label framework for rapid brand onboarding",
+                "End-to-end Flutter development enabling a unified, high-performance cross-platform user experience"
+            ],
+            "images": []
+        },
+        {
+            "id": "operations-platform",
+            "title": "Operations Platform",
+            "subtitle": "Real-time taxi and ride-sharing coordination.",
+            "cover": "/images/home/case-study-3.jpeg",
+            "tag": "Flutter App",
+            "categories": [
+                "Mobility",
+                "Logistics"
+            ],
+            "client": "WeTaxi",
+            "sector": "Mobility",
+            "tech": "Flutter",
+            "pain": "WeTaxi faced inefficiencies due to taxi bookings being manually coordinated and updated on website by staff. The lack of a driver-side app and real-time communication created delays in managing ride requests.",
+            "solution": "Etere Studio developed the WeTaxi mobile platform to deliver an integrated experience for taxi booking, payments, and real-time ride-sharing.\nReal-time GPS tracking for accurate driver-passenger coordination\nGuided user flow for booking, fare calculation, and digital payments\nAutomated data sync for transaction history and fare validation\nLive ride and route sharing for coordinated, multi-passenger journeys",
+            "highlights": [
+                "Real-time GPS tracking for accurate driver-passenger coordination",
+                "Guided user flow for booking, fare calculation, and digital payments",
+                "Automated data sync for transaction history and fare validation",
+                "Live ride and route sharing for coordinated, multi-passenger journeys"
+            ],
+            "images": []
+        }
+    ],
+    "footer": {
+        "copyright": "© 2025 Etere Studio. All rights reserved.",
+        "links": [
+            {
+                "label": "Privacy",
+                "href": "/privacy"
+            },
+            {
+                "label": "Terms",
+                "href": "/terms"
+            }
+        ]
+    }
+}

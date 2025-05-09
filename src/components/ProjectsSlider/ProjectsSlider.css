@@ -1,0 +1,203 @@
+.projects-slider {
+  width: 100%;
+  padding: 2rem 2rem;
+  box-sizing: border-box;
+}
+
+.black {
+  color: #000 !important;
+}
+
+.ps-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 1rem;
+}
+
+.ps-header h2 {
+
+  font-size: 3.8rem;
+  font-weight: 600;
+  line-height: 1em;
+  color: #000;
+  letter-spacing: -0.18rem;
+  max-width: 600px;
+
+}
+
+.ps-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-right: 20px;
+}
+
+.ps-controls button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.ps-counter {
+  font-family: monospace;
+}
+
+/* --- SLOT WRAPPER --- */
+.ps-slots {
+  display: flex;
+  gap: 1rem;
+}
+
+/* SLOT BASE */
+.ps-slot {
+  position: relative;
+  border-radius: 8px;
+  flex-shrink: 0;
+  height: auto;
+  background: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+}
+
+.ps-slot-main {
+  flex: 0 0 65%;
+}
+
+.ps-slot-preview {
+  flex: 0 0 35%;
+  max-height: 45vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 280px;
+  /* mantiene il testo visibile */
+}
+
+/* IMMAGINE FISSA PER SLOT */
+.ps-slot img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* PREVIEW TEXT ALLINEATO IN BASSO */
+.ps-info-preview {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.ps-info-preview h3 {
+  font-size: 1rem;
+  margin: 0 0 0.2rem;
+  color: #000;
+}
+
+.ps-info-preview p {
+  font-size: 0.85rem;
+  margin: 0;
+  opacity: 0.85;
+  color: #000;
+}
+
+/* TESTI SOTTO LE IMMAGINI */
+.ps-details {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.ps-detail {
+  flex-shrink: 0;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  font-size: 0.9rem;
+}
+
+.ps-detail.in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.ps-detail-main {
+  flex: 0 0 65%;
+}
+
+.ps-detail-preview {
+  flex: 0 0 35%;
+  min-width: 280px;
+}
+
+.ps-detail-main h3 {
+  padding-top: 10px;
+
+  font-size: 1.2rem;
+  margin: 0 0 0.3rem;
+}
+
+.ps-detail-main p {
+  font-size: 0.9rem;
+  margin: 0 0 0.75rem;
+}
+
+/* TAG E CATEGORIE */
+.ps-tag,
+.ps-categories span {
+  display: inline-block;
+  color: #000;
+  background: transparent;
+  border: 1px solid #000;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  margin: 0 0.5rem 0.5rem 0;
+  font-weight: 400;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .ps-slots {
+    flex-direction: column;
+  }
+
+  .ps-slot-main,
+  .ps-slot-preview,
+  .ps-detail-main,
+  .ps-detail-preview {
+    width: 100%;
+    flex: 1 0 auto;
+  }
+
+  .ps-details {
+    flex-direction: column;
+  }
+
+  .ps-info-preview {
+    margin-top: 0.75rem;
+  }
+}
+
+.ps-image-wrapper {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.ps-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.ps-image-wrapper-main {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 8px;
+}

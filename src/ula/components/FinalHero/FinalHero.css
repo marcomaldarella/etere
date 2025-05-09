@@ -1,0 +1,105 @@
+.final-hero {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('/images/home/hero.jpeg') center/cover no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+.final-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.final-hero-content {
+  position: relative;
+  text-align: center;
+  color: white;
+  padding: 0 2rem;
+  max-width: 700px;
+}
+
+/* Titolo identico a .hero-title */
+.final-hero-title {
+  font-size: 5rem;
+  line-height: 1.1;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  margin-bottom: 2rem;
+  /* talvolta serve un line-height più ridotto per il wrapping */
+  /* line-height: 0.9em; */
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Testo identico a .hero-subtitle */
+.final-hero-text {
+  font-size: 1.125rem;
+  color: white;
+  line-height: 1.2;
+  max-width: 700px;
+  margin: 0 auto 3rem;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.final-hero-cta {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.9);
+  z-index: 3;
+
+  padding: 1rem 2rem;
+  font-size: 1.25rem;
+  letter-spacing: -1px;
+  font-weight: 600;
+  color: #fff;
+  /* leggero gradiente off‑white → bianco */
+  background: linear-gradient(90deg,
+      rgba(250, 250, 245, 0.2) 0%,
+      rgba(255, 255, 255, 0.2) 100%);
+
+  border: 1px solid rgba(0, 0, 0, 0.02);
+  border-radius: 30px;
+  cursor: pointer;
+
+  /* clip‑path per “ritaglio” laterale */
+  clip-path: inset(0 0 0 0 round 30px);
+  transition:
+    clip-path 0.3s ease,
+    border-color 0.3s ease,
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.final-hero-cta:hover {
+  color: rgba(0, 0, 0, 0.5);
+
+  /* sfuma un po’ il background per far risaltare il bordo */
+  background: linear-gradient(90deg,
+      rgba(250, 250, 245, 0.6) 0%,
+      rgba(255, 255, 255, 0.6) 100%);
+
+  /* bordo più scuro per l’accento */
+  border-color: rgba(0, 0, 0, 0.3);
+
+  /* “apre” leggermente il clip verso l’interno */
+  clip-path: inset(0 0 0 0 round 20px);
+}
+
+/* Responsive come nell’hero originale */
+@media (max-width: 768px) {
+  .final-hero-title {
+    font-size: 2.1rem;
+  }
+
+  .final-hero-text {
+    font-size: 0.8rem;
+    padding: 0 1rem;
+  }
+}

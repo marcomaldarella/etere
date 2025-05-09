@@ -1,0 +1,38 @@
+/* posiziono il container esattamente dove stava la maschera orizzontale */
+.marquee {
+  position: absolute;
+  top: 93%;
+  /* o dove preferisci verticalmente */
+  left: 37.5vw;
+  /* inizio esattamente al 37.5% del viewport */
+  width: 25vw;
+  /* larghezza=62.5−37.5=25% del viewport */
+  height: 2rem;
+  /* altezza della tua linea di testo */
+  overflow: hidden;
+  pointer-events: none;
+  transform: translateY(-50%);
+  z-index: 2;
+  /* sopra lo sfondo, sotto gli altri layer */
+  color: #fff;
+
+}
+
+.marquee-wrapper {
+  display: flex;
+
+  will-change: transform;
+}
+
+.marquee-content {
+  white-space: nowrap;
+  display: inline‑block;
+  padding-right: 2rem;
+  /* un po’ di spazio tra i cicli */
+}
+
+.marquee-content p {
+  color: #000;
+  font-size: 13px;
+  letter-spacing: -0.2px;
+}
