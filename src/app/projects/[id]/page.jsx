@@ -5,7 +5,7 @@ import { useContent } from '@/context/ContentContext';
 import { useLenis } from '@studio-freight/react-lenis';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
-import { useLayoutEffect, useRef, useState } from 'react';
+import { useLayoutEffect, useRef, useState, useEffect } from 'react';
 import Footer from '@/components/Footer/Footer';
 import './project.css';
 
@@ -20,6 +20,13 @@ export default function ProjectPage() {
     const containerRef = useRef(null);
     const imageRef = useRef(null);
     const [isReady, setIsReady] = useState(false);
+
+    useEffect(() => {
+        if (!lenis) return;
+        requestAnimationFrame(() => {
+          lenis.scrollTo(0, { immediate: true, force: true });
+        });
+    }, [lenis]);
 
     // 🧼 Hard cleanup
     useLayoutEffect(() => {
@@ -43,7 +50,7 @@ export default function ProjectPage() {
                     y: -30,
                     ease: "none",
                     scrollTrigger: {
-                        trigger: imageRef.current,
+                        trigger: containerRef.current,
                         start: "top bottom",
                         end: "bottom top",
                     },
